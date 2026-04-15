@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 218 36% 8%;
+    --foreground: 40 33% 96%;
+    --card: 220 28% 12%;
+    --card-foreground: 40 33% 96%;
+    --popover: 220 28% 12%;
+    --popover-foreground: 40 33% 96%;
+    --primary: 35 72% 63%;
+    --primary-foreground: 220 40% 8%;
+    --secondary: 214 23% 18%;
+    --secondary-foreground: 40 20% 92%;
+    --muted: 216 20% 18%;
+    --muted-foreground: 214 16% 72%;
+    --accent: 193 76% 61%;
+    --accent-foreground: 220 40% 8%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 215 20% 22%;
+    --input: 215 20% 22%;
+    --ring: 35 72% 63%;
+    --radius: 1.15rem;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Manrope', system-ui, sans-serif;
+    --gradient-primary: linear-gradient(135deg, hsl(35 75% 66%), hsl(193 78% 60%));
+    --gradient-hero: radial-gradient(circle at top, hsl(216 48% 16%) 0%, hsl(220 42% 8%) 55%, hsl(222 58% 5%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(219 28% 14% / 0.94) 0%, hsl(221 29% 10% / 0.92) 100%);
+    --shadow-glow: 0 12px 80px hsl(193 78% 60% / 0.18);
+    --shadow-card: 0 20px 60px hsl(223 55% 3% / 0.28);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    min-width: 320px;
+    font-family: var(--font-body);
+    background-image: radial-gradient(circle at top, rgba(103, 184, 255, 0.08), transparent 28%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .glass {
+    @apply border-b border-white/10 backdrop-blur-2xl;
+    background-color: rgba(2, 6, 23, 0.68);
+  }
+
+  .ambient-surface {
+    background:
+      radial-gradient(circle at 20% 15%, rgba(96, 165, 250, 0.12), transparent 30%),
+      radial-gradient(circle at 78% 20%, rgba(251, 191, 36, 0.12), transparent 24%),
+      linear-gradient(180deg, rgba(3, 8, 21, 0.92), rgba(7, 12, 25, 1));
+  }
+
+  .ambient-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.45), transparent 90%);
+  }
+
+  .ambient-orb {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(70px);
+    opacity: 0.35;
+    animation: float-orb 22s ease-in-out infinite;
+  }
+
+  .ambient-orb-one {
+    top: 9%;
+    left: -8%;
+    width: 26rem;
+    height: 26rem;
+    background: rgba(94, 234, 212, 0.22);
+  }
+
+  .ambient-orb-two {
+    right: -10%;
+    top: 25%;
+    width: 28rem;
+    height: 28rem;
+    animation-delay: -8s;
+    background: rgba(245, 158, 11, 0.18);
+  }
+
+  .ambient-orb-three {
+    left: 28%;
+    bottom: -10%;
+    width: 32rem;
+    height: 32rem;
+    animation-delay: -15s;
+    background: rgba(59, 130, 246, 0.16);
+  }
+
+  .ambient-line {
+    position: absolute;
+    height: 1px;
+    width: 42rem;
+    background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.55), transparent);
+    opacity: 0.45;
+    transform: rotate(-18deg);
+    animation: drift-line 20s linear infinite;
+  }
+
+  .ambient-line-one {
+    top: 18%;
+    right: -10rem;
+  }
+
+  .ambient-line-two {
+    bottom: 22%;
+    left: -8rem;
+    animation-delay: -10s;
+    transform: rotate(14deg);
+  }
+
+  .premium-card {
+    @apply rounded-[1.5rem] border border-white/10 bg-white/5 backdrop-blur-xl;
+    box-shadow: var(--shadow-card);
+  }
+
+  .section-shell {
+    @apply px-6 py-20 md:px-10 lg:py-28;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-primary;
+  }
+
+  .hero-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-card);
+  }
+}
+
+@keyframes float-orb {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -24px, 0) scale(1.06);
+  }
+}
+
+@keyframes drift-line {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(-18deg);
+  }
+  50% {
+    transform: translate3d(-70px, 25px, 0) rotate(-18deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-18deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-orb,
+  .ambient-line {
+    animation: none;
+  }
+}

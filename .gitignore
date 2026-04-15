@@ -1,0 +1,54 @@
+# Node dependencies
+node_modules/
+
+# Vite output
+/dist/
+/dist-ssr/
+/.vite/
+
+# Python / Django
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+*.sqlite3-journal
+db.sqlite3
+*.log
+django-debug.log
+*.env
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Django migrations compiled files
+**/migrations/*.pyc
+
+# IDE/editor files
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Coverage and test artifacts
+coverage/
+htmlcov/
+.vitest/
+
+# npm/yarn/pnpm logs
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.local
+
