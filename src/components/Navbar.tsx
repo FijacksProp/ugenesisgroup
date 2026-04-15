@@ -30,9 +30,11 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-3 text-foreground">
-          <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-sm font-semibold text-primary">
-            U
-          </span>
+          <img
+            src="/media/logo.png"
+            alt="UGENESIS logo"
+            className="h-10 w-10 rounded-full border border-white/10 object-cover"
+          />
           <span>
             <span className="block text-lg font-semibold tracking-[0.24em]">UGENESIS</span>
             <span className="block text-[10px] uppercase tracking-[0.28em] text-muted-foreground">
