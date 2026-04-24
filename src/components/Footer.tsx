@@ -8,11 +8,10 @@ const Footer = () => (
         <div>
           <p className="eyebrow mb-5">UGENESIS</p>
           <h3 className="mb-4 max-w-md text-3xl font-semibold leading-none text-foreground">
-            Calm infrastructure leadership with the discipline of a modern platform company.
+            Calm global leadership with the discipline of a diversified platform company.
           </h3>
           <p className="max-w-lg text-sm leading-relaxed text-muted-foreground">
-            We are building an institutional-grade operating system for infrastructure, execution,
-            intelligence, and capital stewardship.
+            We are building an institutional-grade operating system across infrastructure, real estate, technology, partnerships, and capital stewardship.
           </p>
         </div>
         <div>
@@ -29,7 +28,7 @@ const Footer = () => (
           <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">Contact</h4>
           <div className="space-y-3 text-sm text-muted-foreground">
             <p>partnerships@ugenesis.com</p>
-            <p>Institutional conversations, project partnerships, and investment dialogue.</p>
+            <p>Institutional conversations, division partnerships, and investment dialogue.</p>
           </div>
         </div>
       </div>

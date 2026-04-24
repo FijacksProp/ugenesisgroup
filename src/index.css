@@ -153,6 +153,11 @@
     @apply px-6 py-20 md:px-10 lg:py-28;
   }
 
+
+  .section-tight-mobile {
+    @apply py-14;
+  }
+
   .eyebrow {
     @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-primary;
   }
@@ -189,6 +194,16 @@
   }
   100% {
     transform: translate3d(0, 0, 0) rotate(-18deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .section-shell {
+    @apply px-4 py-14;
+  }
+
+  .premium-card {
+    @apply rounded-[1.2rem];
   }
 }
 

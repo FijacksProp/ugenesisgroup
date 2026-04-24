@@ -40,23 +40,21 @@ const Contact = () => {
 
   return (
     <Layout>
-      <section className="section-shell">
+      <section className="section-shell section-tight-mobile">
         <div className="container mx-auto grid gap-10 lg:grid-cols-[0.95fr,1.05fr]">
           <AnimatedSection direction="left">
             <span className="eyebrow mb-6">Contact UGENESIS</span>
             <h1 className="text-5xl font-semibold leading-none text-foreground md:text-7xl">
-              Start a strategic conversation with clarity from the first message.
+              Start a global strategic conversation with clarity from the first message.
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Use this channel for project partnerships, operating collaborations, and investor or
-              institutional discussions. We have wired this form to the new Django backend so
-              submissions are now captured properly.
+              Use this channel for division-level partnerships, investor dialogue, market expansion, and institutional collaboration. Submissions are captured directly in the backend for structured follow-up.
             </p>
             <div className="mt-8 premium-card overflow-hidden">
               <img
                 src={siteAssets.capitalStrategy}
                 alt="Warm capital strategy visual"
-                className="h-[22rem] w-full object-cover"
+                className="h-[18rem] w-full object-cover sm:h-[22rem]"
               />
             </div>
           </AnimatedSection>
@@ -73,7 +71,7 @@ const Contact = () => {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="premium-card space-y-6 p-8 md:p-10">
+              <form onSubmit={handleSubmit} className="premium-card space-y-5 p-6 sm:space-y-6 sm:p-8 md:p-10">
                 <div>
                   <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
                     Inquiry type
@@ -140,7 +138,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="inline-flex w-full items-center justify-center rounded-full bg-primary px-7 py-3 text-sm font-semibold text-primary-foreground transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
+                  className="inline-flex w-full items-center justify-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {isSubmitting ? "Sending..." : "Send Inquiry"}
                 </button>
