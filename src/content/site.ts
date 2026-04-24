@@ -9,40 +9,41 @@ export const siteAssets = {
 
 export const navLinks = [
   { label: "About", href: "/about" },
+  { label: "Divisions", href: "/divisions" },
   { label: "Infrastructure", href: "/infrastructure" },
   { label: "Investment", href: "/investment" },
   { label: "Contact", href: "/contact" },
 ];
 
 export const marketStats = [
-  { value: "$300T+", label: "Global real estate value" },
-  { value: "$10T+", label: "Annual construction market" },
-  { value: "4", label: "Integrated revenue engines" },
-  { value: "24/7", label: "AI-backed decision layer" },
+  { value: "5", label: "Strategic divisions" },
+  { value: "3", label: "Core growth regions" },
+  { value: "24/7", label: "AI-enabled operating cadence" },
+  { value: "1", label: "Integrated enterprise platform" },
 ];
 
 export const capabilityPillars = [
   {
-    title: "Infrastructure Origination",
+    title: "Portfolio Integration",
     description:
-      "UGENESIS moves from site strategy and design logic into delivery planning with one executive thesis guiding the whole asset lifecycle.",
+      "UGENESIS aligns infrastructure, real estate, technology, and capital into one coordinated strategic platform.",
   },
   {
     title: "Execution Intelligence",
     description:
-      "We combine construction coordination, workforce orchestration, and operating discipline into one controllable delivery engine.",
+      "NOVA supports decision-making across planning, delivery, operating control, and leadership visibility.",
   },
   {
-    title: "Capital Stewardship",
+    title: "Global Stewardship",
     description:
-      "Every asset is evaluated as a long-hold value engine, not a short-term transaction, aligning design, operations, and returns.",
+      "Every division is operated with long-horizon discipline, institutional quality standards, and partnership accountability.",
   },
 ];
 
 export const operatingSystemPoints = [
-  "Integrated real estate, construction, and operating strategy",
-  "NOVA as the decision layer across delivery, capital, and asset performance",
-  "Institutional brand language designed for partners, investors, and enterprise clients",
+  "Diversified divisions coordinated by one leadership thesis",
+  "NOVA as the enterprise intelligence layer for operations and governance",
+  "Institutional communication designed for global partners, investors, and enterprise clients",
 ];
 
 export const infrastructureCapabilities = [
@@ -56,20 +57,54 @@ export const infrastructureCapabilities = [
 
 export const investmentThemes = [
   {
-    title: "Real assets with digital leverage",
+    title: "Diversified real-world platform",
     description:
-      "UGENESIS sits where physical infrastructure and software leverage meet, creating upside from both durable assets and operational intelligence.",
+      "UGENESIS combines durable physical assets, enterprise systems, and strategic capital under one operating architecture.",
   },
   {
     title: "Multiple monetization layers",
     description:
-      "Infrastructure revenue, execution services, technology licensing, and capital performance reinforce one another instead of competing for focus.",
+      "Infrastructure revenue, real estate value creation, technology leverage, and capital performance reinforce one another.",
   },
   {
-    title: "A calmer operating model",
+    title: "Institutional resilience",
     description:
-      "The opportunity is not noise or speculation. It is disciplined coordination, delivery confidence, and compounding asset quality.",
+      "The model emphasizes continuity, governance, and disciplined expansion over short-cycle speculation.",
   },
+];
+
+export const companyDivisions = [
+  {
+    id: "01",
+    title: "Infrastructure",
+    description: "Project origination, delivery systems, and long-term operating performance for productive assets.",
+  },
+  {
+    id: "02",
+    title: "Real Estate",
+    description: "Strategic land and asset development shaped for enduring utility, quality, and value creation.",
+  },
+  {
+    id: "03",
+    title: "Technology & NOVA",
+    description: "Enterprise intelligence workflows that support planning, coordination, and executive decision clarity.",
+  },
+  {
+    id: "04",
+    title: "Capital & Investment",
+    description: "Structured capital strategies aligned with long-horizon performance and strategic partnerships.",
+  },
+  {
+    id: "05",
+    title: "Strategic Partnerships",
+    description: "Cross-border and cross-sector collaborations designed for scale, stability, and measurable impact.",
+  },
+];
+
+export const globalFocusAreas = [
+  "Africa: infrastructure modernization and urban growth",
+  "Middle East: long-horizon real-asset partnerships",
+  "International partnerships: institutional co-development and expansion",
 ];
 
 export const contactPathways = [

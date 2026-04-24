@@ -7,16 +7,15 @@ import { investmentThemes, marketStats, siteAssets } from "@/content/site";
 
 const Investment = () => (
   <Layout>
-    <section className="section-shell">
+    <section className="section-shell section-tight-mobile">
       <div className="container mx-auto grid gap-10 lg:grid-cols-[1fr,1fr]">
         <AnimatedSection direction="left">
-          <span className="eyebrow mb-6">Investment Perspective</span>
+          <span className="eyebrow mb-6">Capital & Investment Division</span>
           <h1 className="text-5xl font-semibold leading-none text-foreground md:text-7xl">
-            A cleaner narrative for infrastructure, AI leverage, and real-asset value creation.
+            Capital strategy supporting a diversified global operating platform.
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            UGENESIS is not framed around speculative excitement. The investment case is stronger
-            when it is grounded in productive assets, operating leverage, and disciplined systems.
+            UGENESIS positions capital as an enabler for diversified enterprise growth across infrastructure, real estate, technology, and strategic partnerships.
           </p>
         </AnimatedSection>
         <AnimatedSection direction="right">
@@ -24,14 +23,14 @@ const Investment = () => (
             <img
               src={siteAssets.capitalStrategy}
               alt="Capital-themed visual representing long-horizon investment strategy"
-              className="h-[31rem] w-full object-cover"
+              className="h-[22rem] w-full object-cover sm:h-[31rem]"
             />
           </div>
         </AnimatedSection>
       </div>
     </section>
 
-    <section className="section-shell">
+    <section className="section-shell section-tight-mobile">
       <div className="container mx-auto">
         <SectionHeader
           label="Scale"
@@ -46,7 +45,7 @@ const Investment = () => (
       </div>
     </section>
 
-    <section className="section-shell">
+    <section className="section-shell section-tight-mobile">
       <div className="container mx-auto">
         <SectionHeader
           label="Thesis"
