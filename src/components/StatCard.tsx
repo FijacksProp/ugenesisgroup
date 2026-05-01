@@ -45,11 +45,14 @@ const StatCard = ({ value, label, delay = 0 }: StatCardProps) => {
 
   return (
     <AnimatedSection delay={delay}>
-      <div ref={ref} className="premium-card p-8 text-center">
-        <div className="mb-3 text-4xl font-semibold text-gradient md:text-5xl lg:text-6xl">
+      <div ref={ref} className="premium-card stat-card hover-lift relative overflow-hidden p-6 text-left sm:p-7">
+        <div className="surface-line absolute left-0 right-0 top-0 h-px" />
+        <div className="mb-3 text-4xl font-semibold text-gradient md:text-5xl">
           {displayed}
         </div>
-        <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">{label}</p>
+        <p className="text-xs font-semibold uppercase text-muted-foreground" style={{ letterSpacing: "0.08em" }}>
+          {label}
+        </p>
       </div>
     </AnimatedSection>
   );

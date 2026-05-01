@@ -73,6 +73,42 @@ export const investmentThemes = [
   },
 ];
 
+export const missionVision = [
+  {
+    title: "Mission",
+    description:
+      "To build companies and systems that turn ideas, talent, capital, and infrastructure into long-term economic value.",
+  },
+  {
+    title: "Vision",
+    description:
+      "To become a global enterprise platform where multiple businesses operate as one intelligent, connected ecosystem.",
+  },
+];
+
+export const strategicDivisions = [
+  {
+    title: "UGENESIS Infrastructure",
+    description: "Real estate, construction, development, and physical asset delivery.",
+  },
+  {
+    title: "UGENESIS Intelligence",
+    description: "AI systems, data tools, automation, and decision infrastructure.",
+  },
+  {
+    title: "UGENESIS Capital",
+    description: "Investment strategy, asset financing, and long-term value creation.",
+  },
+  {
+    title: "UGENESIS Talent",
+    description: "Workforce systems, skills development, leadership, and human capital.",
+  },
+  {
+    title: "UGENESIS Digital",
+    description: "Software products, platforms, media, and digital business systems.",
+  },
+];
+
 export const companyDivisions = [
   {
     id: "01",

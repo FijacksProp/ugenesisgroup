@@ -40,17 +40,19 @@ const Contact = () => {
 
   return (
     <Layout>
-      <section className="section-shell section-tight-mobile">
-        <div className="container mx-auto grid gap-10 lg:grid-cols-[0.95fr,1.05fr]">
+      <section className="section-shell">
+        <div className="container mx-auto grid gap-8 lg:grid-cols-[0.95fr,1.05fr] lg:gap-10">
           <AnimatedSection direction="left">
-            <span className="eyebrow mb-6">Contact UGENESIS</span>
-            <h1 className="text-5xl font-semibold leading-none text-foreground md:text-7xl">
-              Start a global strategic conversation with clarity from the first message.
+            <span className="eyebrow mb-5 md:mb-6">Contact UGENESIS</span>
+            <h1 className="text-[2.55rem] font-semibold leading-[1] text-foreground sm:text-5xl md:text-7xl">
+              Start a venture, partnership, or investment conversation with UGENESIS.
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Use this channel for division-level partnerships, investor dialogue, market expansion, and institutional collaboration. Submissions are captured directly in the backend for structured follow-up.
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:mt-7 md:text-lg">
+              Use this channel for new ventures, strategic partnerships, project opportunities,
+              investor conversations, and institutional discussions connected to the UGENESIS
+              enterprise platform.
             </p>
-            <div className="mt-8 premium-card overflow-hidden">
+            <div className="media-frame mt-8">
               <img
                 src={siteAssets.capitalStrategy}
                 alt="Warm capital strategy visual"
@@ -61,46 +63,47 @@ const Contact = () => {
 
           <AnimatedSection direction="right">
             {submitted ? (
-              <div className="premium-card p-10 text-center">
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/15 text-sm font-semibold uppercase tracking-[0.28em] text-primary">
+              <div className="premium-card p-6 text-center md:p-10">
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-lg bg-primary/15 text-sm font-semibold uppercase text-primary">
                   OK
                 </div>
-                <h3 className="mt-6 text-3xl font-semibold text-foreground">Inquiry received</h3>
+                <h3 className="mt-6 text-2xl font-semibold text-foreground md:text-3xl">Inquiry received</h3>
                 <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                   Your message has been saved in the backend and is ready for follow-up.
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="premium-card space-y-5 p-6 sm:space-y-6 sm:p-8 md:p-10">
+              <form onSubmit={handleSubmit} className="premium-card space-y-5 p-5 sm:p-6 md:space-y-6 md:p-10">
                 <div>
-                  <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+                  <label className="mb-2 block text-xs font-semibold uppercase text-muted-foreground" style={{ letterSpacing: "0.08em" }}>
                     Inquiry type
                   </label>
                   <select
                     value={form.inquiryType}
                     onChange={(event) => setForm({ ...form, inquiryType: event.target.value })}
-                    className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
+                    className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
                   >
                     <option>Partnership</option>
                     <option>Investment</option>
-                    <option>Project Delivery</option>
+                    <option>New Venture</option>
+                    <option>Project Opportunity</option>
                     <option>General</option>
                   </select>
                 </div>
-                <div className="grid gap-6 md:grid-cols-2">
+                <div className="grid gap-5 md:grid-cols-2 md:gap-6">
                   <div>
-                    <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+                    <label className="mb-2 block text-xs font-semibold uppercase text-muted-foreground" style={{ letterSpacing: "0.08em" }}>
                       Full name
                     </label>
                     <input
                       required
                       value={form.fullName}
                       onChange={(event) => setForm({ ...form, fullName: event.target.value })}
-                      className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
+                      className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
                     />
                   </div>
                   <div>
-                    <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+                    <label className="mb-2 block text-xs font-semibold uppercase text-muted-foreground" style={{ letterSpacing: "0.08em" }}>
                       Email
                     </label>
                     <input
@@ -108,22 +111,22 @@ const Contact = () => {
                       type="email"
                       value={form.email}
                       onChange={(event) => setForm({ ...form, email: event.target.value })}
-                      className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
+                      className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
                     />
                   </div>
                 </div>
                 <div>
-                  <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+                  <label className="mb-2 block text-xs font-semibold uppercase text-muted-foreground" style={{ letterSpacing: "0.08em" }}>
                     Organization
                   </label>
                   <input
                     value={form.organization}
                     onChange={(event) => setForm({ ...form, organization: event.target.value })}
-                    className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
+                    className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
                   />
                 </div>
                 <div>
-                  <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
+                  <label className="mb-2 block text-xs font-semibold uppercase text-muted-foreground" style={{ letterSpacing: "0.08em" }}>
                     Message
                   </label>
                   <textarea
@@ -131,14 +134,14 @@ const Contact = () => {
                     rows={6}
                     value={form.message}
                     onChange={(event) => setForm({ ...form, message: event.target.value })}
-                    className="w-full resize-none rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
+                    className="w-full resize-none rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
                   />
                 </div>
                 {error ? <p className="text-sm text-red-300">{error}</p> : null}
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="inline-flex w-full items-center justify-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
+                  className="btn-primary w-full disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {isSubmitting ? "Sending..." : "Send Inquiry"}
                 </button>
@@ -153,9 +156,9 @@ const Contact = () => {
           <div className="grid gap-6 md:grid-cols-3">
             {contactPathways.map((pathway, index) => (
               <AnimatedSection key={pathway.step} delay={index * 0.08}>
-                <div className="premium-card h-full p-8">
-                  <p className="text-sm uppercase tracking-[0.28em] text-primary">{pathway.step}</p>
-                  <h3 className="mt-5 text-2xl font-semibold leading-none text-foreground">{pathway.title}</h3>
+                <div className="premium-card hover-lift h-full p-6 md:p-8">
+                  <p className="text-xs font-semibold uppercase text-primary" style={{ letterSpacing: "0.08em" }}>{pathway.step}</p>
+                  <h3 className="mt-4 text-xl font-semibold leading-tight text-foreground md:mt-5 md:text-2xl">{pathway.title}</h3>
                   <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{pathway.description}</p>
                 </div>
               </AnimatedSection>
