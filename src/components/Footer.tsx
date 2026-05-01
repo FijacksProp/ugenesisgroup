@@ -8,7 +8,7 @@ const Footer = () => (
         <div>
           <div className="relative z-10 mb-5 flex items-center gap-3">
             <img
-              src="/media/logo.png"
+              src="/media/ugenesis-network-logo.png"
               alt="UGENESIS logo"
               className="brand-mark h-12 w-12 rounded-lg border border-white/10 bg-slate-950/60 object-contain p-1.5"
             />

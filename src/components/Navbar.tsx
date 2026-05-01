@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-5 md:h-20 md:px-6">
         <Link to="/" className="flex items-center gap-3 text-foreground">
           <img
-            src="/media/logo.png"
+            src="/media/ugenesis-network-logo.png"
             alt="UGENESIS logo"
             className="brand-mark h-10 w-10 rounded-lg border border-white/10 bg-slate-950/60 object-contain p-1.5 shadow-lg md:h-11 md:w-11"
           />

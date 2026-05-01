@@ -114,7 +114,7 @@ const NetworkIntelligenceMark = () => {
 
         <div className="relative z-10 flex h-28 w-28 flex-col items-center justify-center rounded-full border border-primary/30 bg-slate-950/80 p-4 text-center shadow-2xl backdrop-blur-xl sm:h-36 sm:w-36">
           <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-full border border-primary/40 bg-primary/10 sm:h-14 sm:w-14">
-            <img src="/media/logo.png" alt="" className="h-8 w-8 object-contain sm:h-10 sm:w-10" />
+            <img src="/media/ugenesis-network-logo.png" alt="" className="h-8 w-8 object-contain sm:h-10 sm:w-10" />
           </div>
           <p className="text-[9px] font-semibold uppercase text-primary sm:text-[10px]" style={{ letterSpacing: "0.08em" }}>
             UGENESIS Core
