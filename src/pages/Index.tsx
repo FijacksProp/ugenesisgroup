@@ -22,11 +22,11 @@ const Index = () => (
         <AnimatedSection direction="left">
           <span className="eyebrow mb-5 md:mb-6">UGENESIS Group</span>
           <h1 className="max-w-5xl text-[2.65rem] font-semibold leading-[0.98] text-foreground sm:text-5xl md:text-7xl lg:text-[5.25rem]">
-            A venture studio building connected companies across infrastructure, assets, intelligence, and capital.
+            The Infrastructure Layer for Building and Orchestrating Companies Assets and Capital.
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:mt-7 md:text-lg">
-            UGENESIS is not a single-product company. We build, own, and coordinate a portfolio of
-            divisions, platforms, and real-world assets under one enterprise system.
+            UGENESIS is a system builder-designing, owning and coordinating interconnected platforms, divisions,
+            and real world assets within a unified intelligence and capital architecture.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:mt-10 md:gap-4">
             <Link
